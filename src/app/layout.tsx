@@ -3,6 +3,7 @@ import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { agent } from "@/data/agent";
+import { getSiteUrl } from "@/lib/site";
 import "./globals.css";
 
 const display = Cormorant_Garamond({
@@ -18,6 +19,7 @@ const sans = DM_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(getSiteUrl()),
   title: {
     default: `${agent.name} | Bienes Raíces Bogotá`,
     template: `%s | ${agent.shortName} Bienes Raíces`,
