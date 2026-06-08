@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Instagram, Facebook, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { agent } from "@/data/agent";
 
 export function Footer() {
@@ -13,8 +13,13 @@ export function Footer() {
           <p className="mt-1 text-sm text-brand-300">Bienes Raíces</p>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-ink-300">
             {agent.tagline}. Asesoría personalizada para comprar, vender o arrendar
-            con confianza.
+            en Bogotá.
           </p>
+          {agent.isProposal && (
+            <p className="mt-3 inline-block rounded-full border border-brand-500/30 bg-brand-500/10 px-3 py-1 text-xs font-medium text-brand-300">
+              Propuesta inicial
+            </p>
+          )}
         </div>
 
         <div>
@@ -39,33 +44,15 @@ export function Footer() {
 
         <div>
           <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
-            Contacto
+            Ubicación
           </p>
-          <div className="flex flex-col gap-3 text-sm">
-            <a href={`tel:${agent.phone}`} className="flex items-center gap-2 hover:text-brand-300">
-              <Phone size={16} />
-              {agent.phone}
-            </a>
-            <a href={`mailto:${agent.email}`} className="flex items-center gap-2 hover:text-brand-300">
-              <Mail size={16} />
-              {agent.email}
-            </a>
-            <p className="flex items-center gap-2">
-              <MapPin size={16} />
-              {agent.city}
-            </p>
-            <div className="mt-2 flex gap-3">
-              <a href={agent.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="rounded-full bg-ink-800 p-2 hover:bg-brand-700">
-                <Instagram size={18} />
-              </a>
-              <a href={agent.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="rounded-full bg-ink-800 p-2 hover:bg-brand-700">
-                <Facebook size={18} />
-              </a>
-              <a href={agent.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="rounded-full bg-ink-800 p-2 hover:bg-brand-700">
-                <Linkedin size={18} />
-              </a>
-            </div>
-          </div>
+          <p className="flex items-center gap-2 text-sm">
+            <MapPin size={16} />
+            {agent.city}
+          </p>
+          <p className="mt-4 text-sm text-ink-400">
+            Contacto directo disponible próximamente.
+          </p>
         </div>
       </div>
 

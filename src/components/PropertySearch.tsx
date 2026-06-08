@@ -63,7 +63,7 @@ export function PropertySearch() {
             type="text"
             value={city}
             onChange={(e) => setCity(e.target.value)}
-            placeholder="Ej: Cuenca"
+            placeholder="Ej: Bogotá"
             className="w-full rounded-xl border border-ink-200 bg-ink-50 px-4 py-3 text-sm outline-none focus:border-brand-500"
           />
         </div>

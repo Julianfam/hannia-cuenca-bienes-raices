@@ -15,7 +15,7 @@ export function Hero() {
         <div>
           <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-brand-400/30 bg-brand-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-brand-200">
             <Sparkles size={14} />
-            Asesoría inmobiliaria personalizada
+            Propuesta inicial · Bogotá
           </p>
           <h1 className="font-display text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
             Encuentra tu próximo hogar con{" "}

@@ -17,8 +17,8 @@ export function About() {
             />
           </div>
           <div className="absolute -bottom-6 -right-6 rounded-2xl bg-brand-600 px-6 py-4 text-white shadow-card">
-            <p className="font-display text-3xl font-bold">5+</p>
-            <p className="text-sm text-brand-100">Años de experiencia</p>
+            <p className="font-display text-3xl font-bold">Bogotá</p>
+            <p className="text-sm text-brand-100">Mercado local</p>
           </div>
         </div>
 

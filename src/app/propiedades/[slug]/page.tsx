@@ -9,7 +9,7 @@ import {
   Car,
   MapPin,
   Check,
-  MessageCircle,
+  Sparkles,
 } from "lucide-react";
 import { getPropertyBySlug, formatPrice, properties } from "@/data/properties";
 import { agent } from "@/data/agent";
@@ -43,10 +43,6 @@ export default async function PropertyDetailPage({ params }: PageProps) {
   const { slug } = await params;
   const property = getPropertyBySlug(slug);
   if (!property) notFound();
-
-  const whatsappMessage = encodeURIComponent(
-    `Hola ${agent.shortName}, me interesa la propiedad: ${property.title} (${property.location}, ${property.city}).`
-  );
 
   return (
     <article>
@@ -164,26 +160,21 @@ export default async function PropertyDetailPage({ params }: PageProps) {
             </div>
 
             <p className="mt-4 text-sm text-ink-600">
-              ¿Te interesa esta propiedad? Contáctame y te daré todos los detalles,
-              agenda una visita o resuelve tus dudas.
+              ¿Te interesa esta propiedad? Esta es una propuesta inicial del
+              portal. Los canales de contacto se habilitarán próximamente.
             </p>
 
-            <a
-              href={`https://wa.me/${agent.whatsapp}?text=${whatsappMessage}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#1fb855]"
-            >
-              <MessageCircle size={18} />
-              Consultar por WhatsApp
-            </a>
+            <div className="mt-6 flex items-center gap-3 rounded-xl border border-brand-200 bg-brand-50 px-4 py-3 text-sm text-brand-800">
+              <Sparkles size={18} className="shrink-0" />
+              Propiedad de demostración
+            </div>
 
-            <a
-              href={`tel:${agent.phone}`}
+            <Link
+              href="/#contacto"
               className="mt-3 flex w-full items-center justify-center rounded-xl border border-ink-200 px-4 py-3 text-sm font-semibold text-ink-800 transition hover:bg-ink-50"
             >
-              Llamar: {agent.phone}
-            </a>
+              Ver sección de contacto
+            </Link>
           </aside>
         </div>
       </div>
