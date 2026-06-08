@@ -1,0 +1,30 @@
+export const agent = {
+  name: "Hannia Nicole Cuenca",
+  shortName: "Hannia Cuenca",
+  title: "Asesora Inmobiliaria",
+  tagline: "Tu hogar ideal, con confianza y dedicación",
+  bio: "Soy Hannia Nicole Cuenca, asesora inmobiliaria comprometida con ayudarte a encontrar la propiedad perfecta. Con un enfoque cercano, profesional y transparente, te acompaño en cada paso: desde la búsqueda hasta la firma. Mi prioridad es que tomes la mejor decisión con tranquilidad.",
+  photo: "/images/hannia-cuenca.jpg",
+  phone: "+57 300 000 0000",
+  whatsapp: "573000000000",
+  email: "hannia.cuenca@email.com",
+  city: "Cuenca, Ecuador",
+  experience: "5+ años de experiencia",
+  specialties: [
+    "Venta de propiedades",
+    "Arriendo residencial",
+    "Asesoría de inversión",
+    "Avalúos y consultoría",
+  ],
+  social: {
+    instagram: "https://instagram.com/",
+    facebook: "https://facebook.com/",
+    linkedin: "https://linkedin.com/",
+  },
+  stats: [
+    { label: "Propiedades gestionadas", value: "120+" },
+    { label: "Clientes satisfechos", value: "95%" },
+    { label: "Años de experiencia", value: "5+" },
+    { label: "Ciudades atendidas", value: "3" },
+  ],
+};
