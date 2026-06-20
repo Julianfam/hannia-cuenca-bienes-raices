@@ -8,6 +8,7 @@ import { agent } from "@/data/agent";
 const navLinks = [
   { href: "/", label: "Inicio" },
   { href: "/propiedades", label: "Propiedades" },
+  { href: "/experiencia", label: "Experiencia" },
   { href: "/#servicios", label: "Servicios" },
   { href: "/#sobre-mi", label: "Sobre mí" },
   { href: "/#contacto", label: "Contacto" },

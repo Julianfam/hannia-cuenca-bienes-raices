@@ -15,9 +15,9 @@ export const agent = {
     "Avalúos y consultoría",
   ],
   stats: [
-    { label: "Enfoque local", value: "Bogotá" },
-    { label: "Atención", value: "Personalizada" },
-    { label: "Servicio", value: "Integral" },
-    { label: "Compromiso", value: "100%" },
+    { label: "Ventas concretadas", value: "+30" },
+    { label: "Arriendos concretados", value: "+40" },
+    { label: "Operaciones cerradas", value: "+70" },
+    { label: "Mercado", value: "Bogotá" },
   ],
 };

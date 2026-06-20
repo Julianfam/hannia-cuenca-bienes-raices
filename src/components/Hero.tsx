@@ -35,10 +35,10 @@ export function Hero() {
               <ArrowRight size={16} />
             </Link>
             <Link
-              href="/#contacto"
+              href="/experiencia"
               className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
             >
-              Consulta gratuita
+              Ver experiencia
             </Link>
           </div>
 

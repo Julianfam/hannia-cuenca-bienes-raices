@@ -30,6 +30,9 @@ export function Footer() {
             <Link href="/propiedades" className="hover:text-brand-300">
               Propiedades
             </Link>
+            <Link href="/experiencia" className="hover:text-brand-300">
+              Experiencia
+            </Link>
             <Link href="/#servicios" className="hover:text-brand-300">
               Servicios
             </Link>
