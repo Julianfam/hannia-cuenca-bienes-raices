@@ -28,17 +28,17 @@ export function Hero() {
 
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
-              href="/propiedades"
+              href="/proyectos/san-isidro"
               className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-400"
             >
-              Ver propiedades
+              Proyecto San Isidro
               <ArrowRight size={16} />
             </Link>
             <Link
-              href="/experiencia"
+              href="/propiedades"
               className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
             >
-              Ver experiencia
+              Ver propiedades
             </Link>
           </div>
 

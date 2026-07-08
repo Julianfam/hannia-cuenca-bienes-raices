@@ -8,6 +8,7 @@ import { agent } from "@/data/agent";
 const navLinks = [
   { href: "/", label: "Inicio" },
   { href: "/propiedades", label: "Propiedades" },
+  { href: "/proyectos/san-isidro", label: "San Isidro" },
   { href: "/experiencia", label: "Experiencia" },
   { href: "/#servicios", label: "Servicios" },
   { href: "/#sobre-mi", label: "Sobre mí" },
@@ -39,12 +40,14 @@ export function Header() {
               {link.label}
             </Link>
           ))}
-          <Link
-            href="/#contacto"
-            className="rounded-full bg-ink-950 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-brand-800"
+          <a
+            href="https://wa.me/573025635969?text=Hola%20Hannia%2C%20quiero%20agendar%20una%20cita."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-emerald-500"
           >
-            Agendar cita
-          </Link>
+            WhatsApp
+          </a>
         </nav>
 
         <button

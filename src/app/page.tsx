@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Hero } from "@/components/Hero";
 import { PropertySearch } from "@/components/PropertySearch";
 import { PropertyCard } from "@/components/PropertyCard";
+import { SanIsidroFeature } from "@/components/SanIsidroFeature";
 import { Services } from "@/components/Services";
 import { About } from "@/components/About";
 import { Testimonials } from "@/components/Testimonials";
@@ -15,6 +16,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <SanIsidroFeature />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <PropertySearch />
       </div>

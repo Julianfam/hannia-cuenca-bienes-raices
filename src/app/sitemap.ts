@@ -25,6 +25,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.85,
     },
+    {
+      url: `${siteUrl}/proyectos/san-isidro`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
     ...properties.map((property) => ({
       url: `${siteUrl}/propiedades/${property.slug}`,
       lastModified,

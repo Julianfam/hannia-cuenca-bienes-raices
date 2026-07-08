@@ -6,7 +6,9 @@ export const agent = {
   bio: "Soy Hannia Nicole Cuenca, asesora inmobiliaria en Bogotá comprometida con ayudarte a encontrar la propiedad perfecta. Con un enfoque cercano, profesional y transparente, te acompaño en cada paso: desde la búsqueda hasta la firma. Mi prioridad es que tomes la mejor decisión con tranquilidad.",
   photo: "/images/hannia-cuenca.jpg",
   city: "Bogotá, Colombia",
-  isProposal: true,
+  phone: "+57 302 5635969",
+  phoneE164: "573025635969",
+  isProposal: false,
   experience: "Asesora inmobiliaria",
   specialties: [
     "Venta de propiedades",

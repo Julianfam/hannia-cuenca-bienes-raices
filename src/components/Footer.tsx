@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { MapPin } from "lucide-react";
+import { MapPin, MessageCircle, Phone } from "lucide-react";
 import { agent } from "@/data/agent";
+import { buildWhatsAppUrl, WHATSAPP_DISPLAY } from "@/lib/whatsapp";
 
 export function Footer() {
   return (
@@ -15,11 +16,6 @@ export function Footer() {
             {agent.tagline}. Asesoría personalizada para comprar, vender o arrendar
             en Bogotá.
           </p>
-          {agent.isProposal && (
-            <p className="mt-3 inline-block rounded-full border border-brand-500/30 bg-brand-500/10 px-3 py-1 text-xs font-medium text-brand-300">
-              Propuesta inicial
-            </p>
-          )}
         </div>
 
         <div>
@@ -29,6 +25,9 @@ export function Footer() {
           <div className="flex flex-col gap-2 text-sm">
             <Link href="/propiedades" className="hover:text-brand-300">
               Propiedades
+            </Link>
+            <Link href="/proyectos/san-isidro" className="hover:text-brand-300">
+              Fincas de San Isidro
             </Link>
             <Link href="/experiencia" className="hover:text-brand-300">
               Experiencia
@@ -47,15 +46,30 @@ export function Footer() {
 
         <div>
           <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
-            Ubicación
+            Contacto
           </p>
           <p className="flex items-center gap-2 text-sm">
             <MapPin size={16} />
             {agent.city}
           </p>
-          <p className="mt-4 text-sm text-ink-400">
-            Contacto directo disponible próximamente.
-          </p>
+          <a
+            href={buildWhatsAppUrl(
+              "Hola Hannia, me interesa conocer más información.",
+            )}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 flex items-center gap-2 text-sm text-emerald-400 hover:text-emerald-300"
+          >
+            <MessageCircle size={16} />
+            WhatsApp {WHATSAPP_DISPLAY}
+          </a>
+          <a
+            href={`tel:${agent.phoneE164}`}
+            className="mt-2 flex items-center gap-2 text-sm hover:text-brand-300"
+          >
+            <Phone size={16} />
+            {agent.phone}
+          </a>
         </div>
       </div>
 
