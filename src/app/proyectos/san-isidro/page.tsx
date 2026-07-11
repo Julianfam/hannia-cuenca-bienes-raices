@@ -238,7 +238,7 @@ export default function SanIsidroPage() {
                 Inversión
               </p>
               <h2 className="mt-3 font-display text-3xl font-semibold text-ink-950 sm:text-4xl">
-                Condiciones claras
+                Condiciones iniciales de inversión
               </h2>
               <p className="mt-4 text-ink-600">{sanIsidro.financingNote}</p>
             </div>
@@ -314,8 +314,8 @@ export default function SanIsidroPage() {
               <ExternalLink size={14} />
             </a>
           </div>
-          <div className="mt-8 grid gap-3 sm:grid-cols-3">
-            {sanIsidro.gallery.slice(2).map((img) => (
+          <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {sanIsidro.gallery.map((img) => (
               <div
                 key={img.src}
                 className="relative aspect-[4/3] overflow-hidden rounded-2xl"

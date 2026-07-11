@@ -41,7 +41,7 @@ export function Header() {
             </Link>
           ))}
           <a
-            href="https://wa.me/573025635969?text=Hola%20Hannia%2C%20quiero%20agendar%20una%20cita."
+            href="https://wa.me/573193490747?text=Hola%20Hannia%2C%20quiero%20agendar%20una%20cita."
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-emerald-500"

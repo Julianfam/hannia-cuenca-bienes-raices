@@ -1,6 +1,6 @@
-/** Colombian mobile without spaces: +57 302 5635969 */
-export const WHATSAPP_E164 = "573025635969";
-export const WHATSAPP_DISPLAY = "+57 302 563 5969";
+/** Colombian mobile: +57 319 349 0747 */
+export const WHATSAPP_E164 = "573193490747";
+export const WHATSAPP_DISPLAY = "+57 319 349 0747";
 
 export function buildWhatsAppUrl(message: string): string {
   const text = encodeURIComponent(message.trim());
@@ -27,7 +27,7 @@ export function buildReservationMessage(params: {
     `Hola Hannia, quiero *reservar un lote* en ${params.projectName}.`,
     "",
     `*Lote:* ${params.lotCode}`,
-    `*Área:* ${params.lotArea.toLocaleString("es-CO")} m²`,
+    `*Área:* ${params.lotArea.toLocaleString("es-CO", { maximumFractionDigits: 2 })} m²`,
     `*Precio:* ${params.lotPrice}`,
     `*Separación:* ${params.reservationFee}`,
     "",
