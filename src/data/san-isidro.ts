@@ -188,8 +188,8 @@ export const sanIsidro = {
       alt: "Terrenos campestres San Isidro",
     },
     {
-      src: "https://static.wixstatic.com/media/c835e2_977b88642f644927ac03c04584b99ecbf000.jpg",
-      alt: "Proyecto Fincas de San Isidro Green Home",
+      src: "https://arinmobiliario.com.co/wp-content/uploads/2026/02/1722960516117.jpg",
+      alt: "Vista del terreno en Fincas de San Isidro",
     },
     {
       src: "https://static.wixstatic.com/media/c835e2_9d69284e08114501891f73269a4cd010~mv2.jpeg",
